@@ -15,14 +15,14 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: 'Rooms', href: ROUTES.ROOMS },
-  { label: 'My Bookings', href: ROUTES.BOOKINGS }
+  { label: 'Bookings', href: ROUTES.BOOKINGS }
 ]
 
 export function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <aside className='border-divider bg-content1 flex h-full w-64 flex-col border-r'>
+    <aside className='border-divider bg-content1 flex w-64 flex-col border-r'>
       <nav className='flex-1 space-y-1 p-4'>
         {navItems.map(item => {
           const isActive = pathname === item.href
