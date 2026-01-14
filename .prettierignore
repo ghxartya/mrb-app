@@ -1,0 +1,15 @@
+# Dependencies
+node_modules
+
+# Build outputs
+.next
+build
+dist
+
+# Package manager
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# Generated files
+next-env.d.ts

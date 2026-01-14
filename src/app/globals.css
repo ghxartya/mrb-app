@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@plugin './hero.ts';
+
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+@custom-variant dark (&:is(.dark *));
+
+html {
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+body {
+  font-family: var(--font-montserrat);
+}
+
+/* Focus styles - remove default outlines */
+input:focus,
+input:focus-visible,
+button:focus-visible,
+a:focus-visible,
+[role='button']:focus-visible {
+  outline: none;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--heroui-default-100));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--heroui-default-300));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--heroui-default-400));
+}
+
+/* Selection styles */
+::selection {
+  background-color: hsl(var(--heroui-primary) / 20%);
+}
