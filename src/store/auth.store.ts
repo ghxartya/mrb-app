@@ -2,8 +2,7 @@ import type { User as FirebaseUser } from 'firebase/auth'
 import { create } from 'zustand'
 import { devtools, persist } from 'zustand/middleware'
 
-import * as authService from '@/services/auth.service'
-
+import * as authService from '@/services'
 import type {
   AuthState,
   LoginCredentials,
