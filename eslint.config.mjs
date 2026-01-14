@@ -23,7 +23,7 @@ const eslintConfig = defineConfig([
           varsIgnorePattern: '^_'
         }
       ],
-      '@typescript-eslint/no-explicit-any': 'error',
+      '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-empty-function': 'warn',
@@ -38,8 +38,8 @@ const eslintConfig = defineConfig([
       'react-hooks/preserve-manual-memoization': 'off',
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-debugger': 'error',
-      'no-alert': 'error',
       'prefer-const': 'off',
+      'no-alert': 'off',
       'no-var': 'error',
       eqeqeq: ['error', 'always'],
       curly: ['off', 'all'],

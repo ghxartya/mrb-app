@@ -15,7 +15,6 @@ body {
   font-family: var(--font-montserrat);
 }
 
-/* Scrollbar styles */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -34,7 +33,6 @@ body {
   background: hsl(var(--heroui-default-400));
 }
 
-/* Selection styles */
 ::selection {
   background-color: hsl(var(--heroui-primary) / 20%);
 }
