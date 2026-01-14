@@ -27,7 +27,7 @@ A modern meeting room booking application built with Next.js 16, TypeScript, and
 
 ```bash
 git clone <repository-url>
-cd mrba
+cd mrb-app
 ```
 
 2. Install dependencies:

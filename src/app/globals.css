@@ -15,15 +15,6 @@ body {
   font-family: var(--font-montserrat);
 }
 
-/* Focus styles - remove default outlines */
-input:focus,
-input:focus-visible,
-button:focus-visible,
-a:focus-visible,
-[role='button']:focus-visible {
-  outline: none;
-}
-
 /* Scrollbar styles */
 ::-webkit-scrollbar {
   width: 8px;

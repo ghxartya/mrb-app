@@ -34,6 +34,7 @@ const eslintConfig = defineConfig([
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
       'react-hooks/set-state-in-effect': 'off',
+      'react-hooks/incompatible-library': 'off',
       'react-hooks/preserve-manual-memoization': 'off',
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-debugger': 'error',

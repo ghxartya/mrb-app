@@ -3,10 +3,22 @@
 import { Button } from '@heroui/react'
 
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import { useEffect } from 'react'
 
 import { APP_NAME, ROUTES } from '@/constants'
+import { useAuth } from '@/hooks'
 
 export default function Home() {
+  const router = useRouter()
+  const { isAuthenticated } = useAuth()
+
+  useEffect(() => {
+    if (isAuthenticated) router.push(ROUTES.ROOMS)
+  }, [isAuthenticated, router])
+
+  if (isAuthenticated) return null
+
   return (
     <div className='flex min-h-screen flex-col items-center justify-center p-8'>
       <main className='flex max-w-md flex-col items-center gap-8 text-center'>
