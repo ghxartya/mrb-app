@@ -13,7 +13,7 @@
     "format:check": "prettier --check .",
     "stylelint": "stylelint \"src/**/*.css\"",
     "stylelint:fix": "stylelint \"src/**/*.css\" --fix",
-    "type-check": "tsc --noEmit",
+    "type-check": "tsc --noEmit --incremental false",
     "validate": "yarn type-check && yarn lint && yarn format:check && yarn stylelint",
     "prepare": "husky"
   },
