@@ -193,6 +193,42 @@ service cloud.firestore {
 }
 ```
 
+### Composite Indexes
+
+Configure Firestore indexes for all queries that filter or sort by multiple fields:
+
+```json
+{
+  "indexes": [
+    {
+      "collectionGroup": "bookings",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "roomId", "order": "ASCENDING" },
+        { "fieldPath": "date", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "bookings",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "date", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "bookings",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "date", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
+```
+
 ## Git Flow
 
 This project follows Git Flow branching strategy:
@@ -207,4 +243,4 @@ This project is private and not licensed for public use.
 
 ---
 
-Built with Next.js 16 and TypeScript.
+Built by XarTya (GHX).

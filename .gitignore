@@ -21,3 +21,9 @@ firebase-debug.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Firebase
+.firebaserc
+firebase.json
+firestore.indexes.json
+firestore.rules

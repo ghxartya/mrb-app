@@ -41,16 +41,6 @@
           "order": "ASCENDING"
         }
       ]
-    },
-    {
-      "collectionGroup": "rooms",
-      "queryScope": "COLLECTION",
-      "fields": [
-        {
-          "fieldPath": "name",
-          "order": "ASCENDING"
-        }
-      ]
     }
   ],
   "fieldOverrides": []
